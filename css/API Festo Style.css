@@ -1,0 +1,29 @@
+﻿#copyright{
+	position:fixed;
+	right:2%;
+	width:auto;
+	bottom:1%;
+	height:inherit;}
+#API_Festo{
+	width: 80%;
+	height: 80%;
+}
+#ARU, #COMI, #COMQ03, #COMQ47, #USB{
+	opacity:0;
+}
+
+#I0, #I1, #I2, #I3, #I4, #I5, #I6, #I7{
+	opacity:0;
+}
+#A0p, #A0n, #A1p, #A1n {
+	opacity:0;
+}	
+#Q0, #Q1, #Q2, #Q3, #Q4, #Q5, #Q6, #Q7{
+	opacity:0;
+}
+#VCC1, #VCC2, #VCC3, #VCC4, #VCC5{
+		opacity:0;
+}
+#GND1, #GND2, #GND3, #GND4, #GND5{
+	opacity:0;
+}

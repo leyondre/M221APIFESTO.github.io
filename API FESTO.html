@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="css/API%20Festo%20Style.css" rel="stylesheet" type="text/css">
+<script src="js/API%20Festo%20Afficher.js" type="text/javascript"></script>
+<script src="js/API%20Festo%20Cacher.js"  type="text/javascript"></script>
+<script src="js/API%20Festo%20PlaceImages.js" type="text/javascript"></script> 
+<script src="js/API%20Festo%20message.js" type="text/javascript"></script>
+</head>
+<body onload="PlaceImages()" onresize="PlaceImages()">
+		<!--L'image du boîtier est en image de fond z-index=0, les autres images invisibles (opacity=0% -> régles CSS dans le fichier style.css) 
+		sont superposées, leurs tailles et leurs positions sont réglées individuellement.
+		Au survol (onmouseover) , la fonction afficher(this.id) est appelée en envoyant id de l'image en argument 
+		si le survol est quitté (onmouseout), la fonction cacher(this.id) est appelée en envoyant id de l'image en argument-->
+
+	<div id="API_FESTO" style=" color:black; z-index: 0; position:fixed;">
+	<img id="API_Festo" alt="API_Festo" src="images/API.png">
+		<div >
+			<img id="VCC1"  src="images/VCC.png" alt="Borne 1 24v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="VCC2"  src="images/VCC.png" alt="Borne 2 24v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="VCC3"  src="images/VCC.png" alt="Borne 3 24v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="VCC4"  src="images/VCC.png" alt="Borne 4 24v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="VCC5"  src="images/VCC.png" alt="Borne 5 24v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="GND1"  src="images/GND.png" alt="Borne 1 0v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="GND2"  src="images/GND.png" alt="Borne 2 0v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="GND3"  src="images/GND.png" alt="Borne 3 0v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="GND4"  src="images/GND.png" alt="Borne 4 0v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="GND5"  src="images/GND.png" alt="Borne 5 0v" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I0"  src="images/I0.png" alt="Borne I0.0 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I1"  src="images/I0.png" alt="Borne I0.1 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I2"  src="images/I0.png" alt="Borne I0.2 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I3"  src="images/I0.png" alt="Borne I0.3 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I4"  src="images/I0.png" alt="Borne I0.4 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I5"  src="images/I0.png" alt="Borne I0.5 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I6"  src="images/I0.png" alt="Borne I0.6 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="I7"  src="images/I0.png" alt="Borne I0.7 Entrée numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="A0p"  src="images/A0+.png" alt="Borne AI0.0+ Entrée analogique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="A0n"  src="images/A0-.png" alt="Borne AI0.0- Entrée analogique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="A1p"  src="images/A0+.png" alt="Borne AI1.0+ Entrée analogique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="A1n"  src="images/A0-.png" alt="Borne AI1.0- Entrée analogique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q3"  src="images/Q0.png" alt="Borne Q0.3- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q2"  src="images/Q0.png" alt="Borne Q0.2- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q1"  src="images/Q0.png" alt="Borne Q0.1- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q0"  src="images/Q0.png" alt="Borne Q0.0- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q7"  src="images/Q0.png" alt="Borne Q0.7- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q6"  src="images/Q0.png" alt="Borne Q0.6- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q5"  src="images/Q0.png" alt="Borne Q0.5- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="Q4"  src="images/Q0.png" alt="Borne Q0.4- Sortie numérique" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="COMQ03"  src="images/COM.png" alt="Borne COM03- Commun des sorties Q0.0 à Q0.3" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="COMQ47"  src="images/COM.png" alt="Borne COM47- Commun des sorties Q0.4 à Q0.7" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div >
+			<img id="COMI"  src="images/COM.png" alt="Borne COMI- Commun des entrées I0.0 à I0.7" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div>
+			<img id="ARU"  src="images/ARU.png" alt="Commutateur à clés Arrêt d'urgence" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>	
+		<div>
+			<img id="USB"  src="images/USB.png" alt="Prise USB femelle" onmouseover="afficher(this.id)" onmouseout="cacher(this.id)" style="position: absolute;">
+		</div>
+		<div> <!-- Balise titre H1 dont le texte est donné par la fonction javascript afficher(obj) en fonction de l'image survolée
+					Le texte est vidé par la fonction javascript cacher(obj)-->
+		<H1 id="info" style=" position:relative; text-align:center; top:50%; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:2em "></H1>
+		</div>	
+	</div>
+  			<footer>
+				<p id="copyright" class="">
+					&copy; Copyright  by Eric Le Yondre (feb 2022)
+				</p>
+			</footer>
+</body>
+</html>
